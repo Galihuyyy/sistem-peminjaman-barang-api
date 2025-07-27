@@ -21,36 +21,68 @@ Laravel is a web application framework with expressive, elegant syntax. We belie
 
 Laravel is accessible, powerful, and provides tools required for large, robust applications.
 
-## Learning Laravel
+## System reqruitments
+- Apache Server 2.4.63
+- PHP >= 8.4
+- Mysql >= 8.0
+- PhpMyAdmin >= 6.0 <sup>\*optional</sup>
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
+## How to Install This Project
 
-You may also try the [Laravel Bootcamp](https://bootcamp.laravel.com), where you will be guided through building a modern Laravel application from scratch.
+1. Clone this project to your local computer
+   
+   ```bash
+   git clone https://github.com/Galihuyyy/sistem-peminjaman-barang-api.git
+   ```
+   ```bash
+   cd project-name
+   ```
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains thousands of video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+2. Install Composer Dependencies
+   ```bash
+   composer install
+   ```
+   or
+   ```vim
+   composer i
+   ```
 
-## Laravel Sponsors
+3. Create .env file
+   ```bash
+    cp .env.example .env
+   ```
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the [Laravel Partners program](https://partners.laravel.com).
+4. Generate App Key
+   ```bash
+    php artisan key:generate
+   ```
 
-### Premium Partners
+5. Set up database in your .env file
+   ```bash
+    DB_CONNECTION  = mysql (default)
+    DB_HOST        = 127.0.0.1 (default)
+    DB_PORT        = 3306 (default)
+    DB_DATABASE    = database_name
+    DB_USERNAME    = database_username
+    DB_PASSWORD    = database_password
+   ```
 
-- **[Vehikl](https://vehikl.com/)**
-- **[Tighten Co.](https://tighten.co)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel/)**
-- **[DevSquad](https://devsquad.com/hire-laravel-developers)**
-- **[Redberry](https://redberry.international/laravel-development/)**
-- **[Active Logic](https://activelogic.com)**
+6. Run migration
+   ```bash
+    php artisan migrate
+   ```
 
-## Contributing
+7. Last step, run project in local
+   ```bash
+    php artisan serve
+    ```
+   or
+   ```bash
+    php artisan ser
+    ```
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
-
-## Code of Conduct
-
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
+8. Congrats, your project now is running enjoy your time!
+   
 
 ## Security Vulnerabilities
 
